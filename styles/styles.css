@@ -4,6 +4,10 @@
   --text-color: #000000;
   --button-bg: #007bff;
   --button-text: #ffffff;
+  --font-size-base: clamp(1rem, 2vw, 1.5rem); /* Ajuste dinâmico do texto */
+  --font-size-large: clamp(1.5rem, 4vw, 3rem);
+  --button-padding: clamp(8px, 2vw, 12px) clamp(16px, 3vw, 24px);
+  /* --button-padding: clamp(0.5rem, 2vw, 1rem) clamp(1rem, 3vw, 1.5rem); */
 }
 
 .dark-mode:root {
@@ -24,7 +28,7 @@ body {
 
 .container {
   text-align: center;
-  padding: 20px;
+  padding: clamp(20px, 5vw, 50px);
 }
 
 h1 {
